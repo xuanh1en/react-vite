@@ -4,6 +4,7 @@ import { useState } from "react"
 const TodoNew=(props)=>{
     const [valueInput,setValueInput]=useState("eric")
 
+    // eslint-disable-next-line react/prop-types
     const {addNewTodo}=props
     // addNewTodo("Eric")
 
