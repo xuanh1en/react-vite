@@ -16,6 +16,16 @@ import ProductPage from './pages/product.jsx';
     { 
     path: "/", 
     element:  <App />, 
+    children:[
+          {
+            path:"/users",
+            element: <UserPage />
+          },
+          {
+            path:"/products",
+            element: <ProductPage />
+          }
+      ]
     }, 
     {
       path:"/login",
@@ -24,16 +34,7 @@ import ProductPage from './pages/product.jsx';
     {
       path:"/register",
       element: <RegisterPage />
-    },
-    {
-      path:"/users",
-      element: <UserPage />
-    },
-    {
-      path:"/products",
-      element: <ProductPage />
-    },
-
+    }
     ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
